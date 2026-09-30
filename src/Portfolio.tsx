@@ -1,7 +1,4 @@
-/**
- * Setup:  npm i animejs@3 && npm i -D @types/animejs
- * Use:    import Portfolio from "./Portfolio";  <Portfolio />
- */
+/** Portfolio page rendered by the Vite application entry point. */
 import React, { useEffect, useRef, useState } from "react";
 import anime from "animejs";
 
@@ -53,6 +50,7 @@ const PINS = [70, 130, 190, 250, 310];
 
 const CSS = `
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Figtree:wght@400;500;600&display=swap');
+body{margin:0;background:#0B0F24}
 .pf{--bg:#0B0F24;--ink:#EAF0FF;--muted:#9AA6C8;--glass:rgba(255,255,255,.06);--line:rgba(255,255,255,.12);
   --violet:#8B5CF6;--cyan:#22D3EE;--pink:#F472B6;--sun:#FBBF24;
   font-family:'Figtree',system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;min-height:100vh;position:relative;overflow-x:hidden}
